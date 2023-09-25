@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/fkzpL8x/Health.png",
+        "title": "Product 1",
+        "description": "Description for Product 1",
+        "category": "Health",
+        "category_bg_color": "#60a5fa",
+        "card_bg_color": "#bfdbfe",
+        "text_button_bg_color": "#2563eb",
+        "price": 199.99
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/M79b1gb/Education.png",
+        "title": "Product 2",
+        "description": "Description for Product 2",
+        "category": "Education",
+        "category_bg_color": "#00A86B",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 49.99
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/fMvmKFQ/Clothing.png",
+        "title": "Product 3",
+        "description": "Description for Product 3",
+        "category": "Clothing",
+        "category_bg_color": "#FF5733",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 129.99
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/vQpyB0g/Food.png",
+        "title": "Product 4",
+        "description": "Description for Product 4",
+        "category": "Food",
+        "category_bg_color": "#00A86B",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 299.99
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/vQpyB0g/Food.png",
+        "title": "Product 5",
+        "description": "Description for Product 5",
+        "category": "Food",
+        "category_bg_color": "#FF5733",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 79.99
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/fMvmKFQ/Clothing.png",
+        "title": "Product 6",
+        "description": "Description for Product 6",
+        "category": "Clothing",
+        "category_bg_color": "#00A86B",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 149.99
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/M79b1gb/Education.png",
+        "title": "Product 7",
+        "description": "Description for Product 7",
+        "category": "Education",
+        "category_bg_color": "#FF5733",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 499.99
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/fkzpL8x/Health.png",
+        "title": "Product 8",
+        "description": "Description for Product 8",
+        "category": "Health",
+        "category_bg_color": "#0052ff26",
+        "card_bg_color": "#0052ff15",
+        "text_button_bg_color": "#0052FF",
+        "price": 64.99
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/fkzpL8x/Health.png",
+        "title": "Product 9",
+        "description": "Description for Product 9",
+        "category": "Health",
+        "category_bg_color": "#0052ff26",
+        "card_bg_color": "#0052ff15",
+        "text_button_bg_color": "#0052FF",
+        "price": 199.99
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/M79b1gb/Education.png",
+        "title": "Product 10",
+        "description": "Description for Product 10",
+        "category": "Education",
+        "category_bg_color": "#00A86B",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 159.99
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/fMvmKFQ/Clothing.png",
+        "title": "Product 11",
+        "description": "Description for Product 11",
+        "category": "Clothing",
+        "category_bg_color": "#FF5733",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 44.99
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/vQpyB0g/Food.png",
+        "title": "Product 12",
+        "description": "Description for Product 12",
+        "category": "Food",
+        "category_bg_color": "#00A86B",
+        "card_bg_color": "#F2F2F2",
+        "text_button_bg_color": "#333",
+        "price": 79.99
+    }
+]
+  
