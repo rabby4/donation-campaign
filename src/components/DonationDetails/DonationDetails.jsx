@@ -17,7 +17,7 @@ const DonationDetails = () => {
 
 
     return (
-        <div className="container mx-auto">
+        <div className="max-w-7xl mx-auto mt-12">
             <div className="">
 
                 <div className="flex justify-center flex-col relative">
@@ -26,8 +26,9 @@ const DonationDetails = () => {
                         <button onClick={handleDonation} className="btn">Donate ${donation.price}</button>
                     </div>
                 </div>
-                <div>
-                    <h2></h2>
+                <div className="my-12">
+                    <h2 className="text-4xl mb-5">{donation.title}</h2>
+                    <p>{donation.description}</p>
                 </div>
 
 

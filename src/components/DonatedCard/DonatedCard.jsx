@@ -7,8 +7,8 @@ const DonatedCard = ({ donate }) => {
     return (
         <div>
             <section>
-                <div className="card card-side">
-                    <figure><img src={image} alt="Movie" /></figure>
+                <div className="card card-side px-0">
+                    <figure><img src={image} alt="Movie" className="w-full" /></figure>
                     <div className="card-body">
                         <h2 className="card-title">{title}</h2>
                         <p>Click the button to watch on Jetflix app.</p>

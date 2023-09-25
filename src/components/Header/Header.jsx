@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div className="z-50 relative">
-            <div className="container mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="navbar py-5">
                     <div className="flex-1">
                         <img src="/src/assets/logo/Logo.png" alt="donation-campaign" className="w-40" />

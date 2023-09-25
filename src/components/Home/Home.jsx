@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <section className="container mx-auto py-20">
+            <section className="max-w-7xl mx-auto py-20">
                 <Donations></Donations>
                 {/* <div className="grid grid-cols-4 gap-5">
                     {
