@@ -17,7 +17,7 @@ const Donation = () => {
     }, [])
     return (
         <div>
-            <section className="container mx-auto mt-24">
+            <section className="max-w-7xl mx-auto mt-24">
                 <div className="grid grid-cols-2 gap-10">
                     {
                         donatedItem?.map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>)
