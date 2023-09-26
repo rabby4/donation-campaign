@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getDonations } from "../Utility/setDonation";
 import DonatedCard from "../DonatedCard/DonatedCard";
+import './donation.css'
 
 
 const Donation = () => {
     const donations = useLoaderData();
     const [donatedItem, setDonatedItem] = useState()
+    const [isShow, setIsShow] = useState(false)
 
     useEffect(() => {
         const setDonations = getDonations()
@@ -15,13 +17,20 @@ const Donation = () => {
             setDonatedItem(addedDonations)
         }
     }, [])
+
+    console.log(donatedItem)
+
+
     return (
         <div>
-            <section className="max-w-7xl mx-auto mt-24">
-                <div className="grid grid-cols-2 gap-10">
+            <section className="max-w-7xl lg:mx-auto mt-24 md:mx-14 mx-3">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                     {
-                        donatedItem?.map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>)
+                        isShow ? donatedItem?.map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>) : donatedItem?.slice(0, 4).map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>)
                     }
+                </div>
+                <div className={`text-center ${donatedItem?.length <= 4 ? 'hidden' : 'block'}`}>
+                    <button className="btn my-10" onClick={() => setIsShow(!isShow)}>{isShow ? "Show Less" : "Show All"}</button>
                 </div>
             </section>
         </div>

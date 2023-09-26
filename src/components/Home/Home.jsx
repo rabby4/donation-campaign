@@ -12,11 +12,6 @@ const Home = () => {
             <Banner></Banner>
             <section className="max-w-7xl mx-auto py-20">
                 <Donations></Donations>
-                {/* <div className="grid grid-cols-4 gap-5">
-                    {
-                        donations.map(donation => <DonationCard key={donation.id} donation={donation}></DonationCard>)
-                    }
-                </div> */}
             </section>
         </div>
     );

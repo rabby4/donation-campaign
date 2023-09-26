@@ -4,8 +4,8 @@ const Header = () => {
     return (
         <div className="z-50 relative">
             <div className="max-w-7xl mx-auto">
-                <div className="navbar py-5">
-                    <div className="flex-1">
+                <div className="navbar py-5 flex-col md:flex-row">
+                    <div className="flex-1 mb-5 md:mb-0">
                         <img src="/src/assets/logo/Logo.png" alt="donation-campaign" className="w-40" />
                     </div>
                     <div className="flex-none">

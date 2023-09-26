@@ -27,7 +27,7 @@ const DonationDetails = () => {
                     </div>
                 </div>
                 <div className="my-12">
-                    <h2 className="text-4xl mb-5">{donation.title}</h2>
+                    <h2 className="text-4xl mb-5 font-bold">{donation.title}</h2>
                     <p>{donation.description}</p>
                 </div>
 
