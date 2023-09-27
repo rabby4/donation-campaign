@@ -29,8 +29,8 @@ const Donation = () => {
                         isShow ? donatedItem?.map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>) : donatedItem?.slice(0, 4).map(donate => <DonatedCard key={donate.id} donate={donate}></DonatedCard>)
                     }
                 </div>
-                <div className={`text-center ${donatedItem?.length <= 4 ? 'hidden' : 'block'}`}>
-                    <button className="btn my-10 bg-green-700 hover:bg-green-600 text-white" onClick={() => setIsShow(!isShow)}>{isShow ? "Show Less" : "Show All"}</button>
+                <div className={`text-center ${donatedItem?.length <= 4 ? 'hidden' : ''}`}>
+                    <button className="btn my-10 bg-green-700 hover:bg-green-600 text-white" onClick={() => setIsShow(!isShow)}>{isShow ? 'Show Less' : "Show All"}</button>
                 </div>
             </section>
         </div>

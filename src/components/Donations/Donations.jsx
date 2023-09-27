@@ -7,7 +7,7 @@ const Donations = () => {
     const [donations, setDonations] = useState();
 
     useEffect(() => {
-        fetch('../../../public/donations.json')
+        fetch('/donations.json')
             .then(res => res.json())
             .then(data => setDonations(data))
     }, [])

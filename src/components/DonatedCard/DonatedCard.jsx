@@ -1,8 +1,10 @@
+import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 
 const DonatedCard = ({ donate }) => {
 
-    const { id, image, sqr_img, title, category, category_bg_color, card_bg_color, text_button_bg_color, price } = donate;
+    const { id, image, title, category, category_bg_color, card_bg_color, text_button_bg_color, price } = donate;
 
     return (
         <div>
@@ -16,7 +18,9 @@ const DonatedCard = ({ donate }) => {
                         <h2 className="card-title text-base md:text-xl">{title}</h2>
                         <h4 className="font-medium text-xs md:text-base" style={{ color: text_button_bg_color }}>${price}</h4>
                         <div className="">
-                            <button className=" text-white py-2 px-2 md:px-6 rounded-lg" style={{ background: text_button_bg_color }}>View Details</button>
+                            <Link to={`/donationDetails/${id}`}>
+                                <button className=" text-white py-2 px-2 md:px-6 rounded-lg" style={{ background: text_button_bg_color }}>View Details</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -24,5 +28,9 @@ const DonatedCard = ({ donate }) => {
         </div>
     );
 };
+
+DonatedCard.propTypes = {
+    donate: PropTypes.object
+}
 
 export default DonatedCard;
