@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -6,7 +6,7 @@ const Header = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="navbar py-5 flex-col md:flex-row">
                     <div className="flex-1 mb-5 md:mb-0">
-                        <img src="/src/assets/logo/Logo.png" alt="donation-campaign" className="w-40" />
+                        <Link to='/'><img src={'https://i.ibb.co/rvRss5b/Logo.png'} alt="donation-campaign" className="w-40" /></Link>
                     </div>
                     <div className="flex-none">
                         <ul className="menu-horizontal gap-10 px-1 text-base font-semibold">

@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import { PieChart, Pie, Cell, Tooltip } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";
 import { getDonations, saveDonations } from "../Utility/setDonation";
 
 const Statistics = () => {
@@ -14,8 +14,8 @@ const Statistics = () => {
 
 
     const data = [
-        { name: "Group A", value: donatedFinalValue },
-        { name: "Group B", value: dueFinalDonation }
+        { name: "Your Donation", value: donatedFinalValue },
+        { name: "Total Donation", value: dueFinalDonation }
     ];
 
     const COLORS = ["#FFBB28", "#FF8042"];
@@ -43,15 +43,15 @@ const Statistics = () => {
 
     return (
         <div>
-            <section className="max-w-7xl mx-auto text-center">
-                <PieChart width={600} height={600}>
+            <section className="max-w-7xl mx-auto flex justify-center mt-24">
+                <PieChart width={400} height={400}>
                     <Pie
                         data={data}
                         cx={200}
                         cy={200}
                         labelLine={false}
                         label={renderCustomizedLabel}
-                        outerRadius={80}
+                        outerRadius={180}
                         fill="#8884d8"
                         dataKey="value"
                     >
@@ -59,13 +59,20 @@ const Statistics = () => {
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
                     </Pie>
-                    <Tooltip></Tooltip>
                 </PieChart>
-                <div>
-                    <span>span</span>
-                </div>
+
             </section>
 
+            <div className="flex justify-around flex-col md:flex-row max-w-2xl mx-auto">
+                <div className="relative mx-auto mt-5 flex w-52 text-center">
+                    <p>Your Donation</p>
+                    <span className="w-20 h-2 bg-[#FFBB28] absolute right-0 mt-[10px]"></span>
+                </div>
+                <div className="relative mx-auto mt-5 flex w-52">
+                    <p>Total Donation</p>
+                    <span className="w-20 h-2 bg-[#FF8042] absolute right-0 mt-[10px]"></span>
+                </div>
+            </div>
 
 
         </div>

@@ -23,7 +23,7 @@ const DonationDetails = () => {
                 <div className="flex justify-center flex-col relative">
                     <img src={donation.image} alt="" className=" h-[600px] rounded-2xl" />
                     <div className="w-full bg-black bg-opacity-50 rounded-b-2xl mx-auto p-10 absolute bottom-0">
-                        <button onClick={handleDonation} className="btn">Donate ${donation.price}</button>
+                        <button onClick={handleDonation} className="btn text-white border-0" style={{ background: donation.text_button_bg_color }}>Donate ${donation.price}</button>
                     </div>
                 </div>
                 <div className="my-12">

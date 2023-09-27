@@ -30,7 +30,7 @@ const Donation = () => {
                     }
                 </div>
                 <div className={`text-center ${donatedItem?.length <= 4 ? 'hidden' : 'block'}`}>
-                    <button className="btn my-10" onClick={() => setIsShow(!isShow)}>{isShow ? "Show Less" : "Show All"}</button>
+                    <button className="btn my-10 bg-green-700 hover:bg-green-600 text-white" onClick={() => setIsShow(!isShow)}>{isShow ? "Show Less" : "Show All"}</button>
                 </div>
             </section>
         </div>
